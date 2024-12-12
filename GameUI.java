@@ -64,7 +64,6 @@ public class GameUI {
     }
 
     int readInt(String text) {
-        print(text);
         String string = readString(text);
         int input = Integer.parseInt(string);
 

@@ -25,6 +25,7 @@ public class GameUI {
             int addedScore = data.guess(guess);
 
             printResult(addedScore);
+            readString("Pressione Enter para prosseguir...");
             printSeparator();
 
             print("Quer continuar?");

@@ -5,8 +5,8 @@ public class GameUI {
     private GameData data = new GameData();
 
     public void coreLoop() {
-        String playing = "1";
-        while (playing == "1") {
+        int playing = 1;
+        while (playing == 1) {
             printSeparator();
             print("JOGO DE ADIVINHA");
             printSeparator();
@@ -26,9 +26,11 @@ public class GameUI {
 
             printResult(addedScore);
             printSeparator();
+
             print("Quer continuar?");
-            playing = readString("Digite 1 para continuar ou qualquer outra coisa para encerrar");
+            playing = readInt("Digite 1 para continuar ou outro número para encerrar");
         }
+
         printSeparator();
         print("Jogo finalizado com a pontuação total de " + data.getScore() + " pontos!");
         scanner.close();

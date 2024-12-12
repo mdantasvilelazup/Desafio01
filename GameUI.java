@@ -37,12 +37,13 @@ public class GameUI {
     }
 
     void printResult(int addedScore) {
+        print("Número alvo: " +  data.getTarget());
         switch (addedScore) {
             case 0:
-                
+                print("Passou longe...");
                 break;
             case 5:
-                print("Foi quase.... o número alvo era " + data.getTarget());
+                print("Por pouco!");
                 break;
             case 10:
                 print("Incrível, acertou o alvo!");
